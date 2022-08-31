@@ -1,1 +1,1 @@
-web: gunicorn videocall.wsgi --log-file -
+web: gunicorn videocall.wsgi
