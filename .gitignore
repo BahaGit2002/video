@@ -1,8 +1,15 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-
-# Django stuff:
+*.sqlite3
+venv
+virtualenv
+__pycache__
+*.pyc
+.idea
+.vscode
 *.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+uploads
+.DS_Store
+settings_local.py
+.env
+.python-version
+.env.prod
+media
