@@ -22,7 +22,7 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['videocall.vercel.app', '.now.sh']
+ALLOWED_HOSTS = ['video02.vercel.app', '.now.sh']
 
 # Application definition
 
