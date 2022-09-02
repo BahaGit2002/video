@@ -43,7 +43,7 @@ class CallConsumer(WebsocketConsumer):
         
         if eventType == 'call':
             name = text_data_json['data']['name']
-            print(self.my_name, "is calling", name);
+            print(self.my_name, "is calling", name)
             # print(text_data_json)
 
 
