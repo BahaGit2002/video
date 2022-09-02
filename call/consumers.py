@@ -3,6 +3,7 @@ import json
 from asgiref.sync import async_to_sync
 from channels.generic.websocket import WebsocketConsumer
 
+
 class CallConsumer(WebsocketConsumer):
     def connect(self):
         self.accept()
@@ -45,7 +46,6 @@ class CallConsumer(WebsocketConsumer):
             name = text_data_json['data']['name']
             print(self.my_name, "is calling", name)
             # print(text_data_json)
-
 
             # to notify the callee we sent an event to the group name
             # and their's groun name is the name
@@ -100,7 +100,6 @@ class CallConsumer(WebsocketConsumer):
             'data': event['data']
         }))
 
-
     def call_answered(self, event):
 
         # print(event)
@@ -109,7 +108,6 @@ class CallConsumer(WebsocketConsumer):
             'type': 'call_answered',
             'data': event['data']
         }))
-
 
     def ICEcandidate(self, event):
         self.send(text_data=json.dumps({
